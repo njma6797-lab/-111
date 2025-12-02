@@ -1,0 +1,53 @@
+/* خلفية متحركة */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* الصندوق */
+.container {
+  text-align: center;
+  background: rgba(255,255,255,0.25);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  width: 300px;
+}
+
+input, button, a {
+  margin-top: 10px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+}
+
+button, a {
+  background-color: #ff9a9e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#welcomeMessage {
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  display: none;
+}
