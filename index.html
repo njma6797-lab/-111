@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رفع وتحميل الفيديو</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>رفع الفيديو</h2>
+
+    <!-- رفع الفيديو -->
+    <input type="file" id="videoUpload">
+
+    <button id="generateLinkBtn">توليد رابط التحميل</button>
+
+    <!-- رابط التحميل -->
+    <div id="downloadSection" style="display:none;">
+        <a id="downloadLink" href="" download>تحميل الفيديو</a>
+    </div>
+
+    <!-- كلمة السر -->
+    <div id="passwordSection" style="display:none;">
+        <h3>أدخل كلمة السر</h3>
+        <input type="password" id="passwordInput" placeholder="كلمة السر">
+        <button id="checkBtn">تحقق</button>
+    </div>
+
+    <!-- رسالة الترحيب -->
+    <div id="welcomeMessage">مرحبًا بك في موقع النجم!</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
